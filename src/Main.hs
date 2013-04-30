@@ -1,5 +1,6 @@
 module Main where
 import System.IO
+import System.Random
 
 -- |This is the main function
 main :: IO()
