@@ -15,10 +15,10 @@ version :: Version
 version = Version {versionBranch = [0,1,0,0], versionTags = []}
 bindir, libdir, datadir, libexecdir :: FilePath
 
-bindir     = "/home/h7u9i/.cabal/bin"
-libdir     = "/home/h7u9i/.cabal/lib/MadLibs-0.1.0.0/ghc-7.4.2"
-datadir    = "/home/h7u9i/.cabal/share/MadLibs-0.1.0.0"
-libexecdir = "/home/h7u9i/.cabal/libexec"
+bindir     = "/Users/Alex/Library/Haskell/ghc-7.4.2/lib/MadLibs-0.1.0.0/bin"
+libdir     = "/Users/Alex/Library/Haskell/ghc-7.4.2/lib/MadLibs-0.1.0.0/lib"
+datadir    = "/Users/Alex/Library/Haskell/ghc-7.4.2/lib/MadLibs-0.1.0.0/share"
+libexecdir = "/Users/Alex/Library/Haskell/ghc-7.4.2/lib/MadLibs-0.1.0.0/libexec"
 
 getBinDir, getLibDir, getDataDir, getLibexecDir :: IO FilePath
 getBinDir = catchIO (getEnv "MadLibs_bindir") (\_ -> return bindir)
