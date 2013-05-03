@@ -6,7 +6,6 @@ import System.Random
 main :: IO()
 main = do 
 	hSetBuffering stdout NoBuffering
-<<<<<<< HEAD
 	putStr "Enter the MadLib number you want to do (1-5): "
 	choice <- getLine
 	if (choice == "1")
@@ -25,7 +24,7 @@ main = do
 						madLibs5
 
 madLibs1 = do
-	putStrLn "Pen Pals"
+	putStrLn "-----Pen Pals-----"
 	putStr "Name: "
 	name1 <- getLine
 	putStr "Adjective: "
@@ -90,15 +89,52 @@ madLibs4 = do
 	putStrLn "MadLibs4"
 
 madLibs5 = do
-	putStrLn "Looking for Love"
+	putStrLn "-----Looking for Love-----"
 	putStr "Adjective: "
 	adjective1 <- getLine
 	putStr "Occupation: "
 	occupation1 <- getLine
-	putStrLn "MadLibs5"
-=======
-	putStr "This is a new line by Alex."
-	putStr "Give me a noun: "
-	name <- getLine
-	putStrLn (name)
->>>>>>> 5683d9b87b1742171f6affb07ba994e9d6a2ed61
+	putStr "Plural Noun: "
+	pluralnoun1 <- getLine
+	putStr "Noun: "
+	noun1 <- getLine
+	putStr "Noun: "
+	noun2 <- getLine
+	putStr "Noun: "
+	noun3 <- getLine
+	putStr "Noun: "
+	noun4 <- getLine
+	putStr "-ing verb: "
+	ingverb1 <-getLine
+	putStr "Adjective: "
+	adjective1 <- getLine
+	putStr "Adjective: "
+	adjective2 <- getLine
+	putStr "Adjective: "
+	adjective3 <- getLine
+	putStr "Adverb: "
+	adverb1 <- getLine
+	putStr "Adjective: "
+	adjective4 <- getLine
+	putStr "Number: "
+	number1 <- getLine
+	putStr "Number: "
+	number2 <- getLine
+	putStr "Adjective: "
+	adjective5 <- getLine
+	putStr "Adjective: "
+	adjective6 <- getLine
+	putStr "Noun: "
+	noun5 <- getLine
+	putStr "Verb: "
+	verb1 <- getLine
+	putStr "Plural Noun: "
+	pluralnoun2 <- getLine
+	putStr "Noun: "
+	noun6 <- getLine
+	putStr "Noun: "
+	noun7 <- getLine
+	putStr "Verb: "
+	verb2 <- getLine
+	putStrLn (adjective1++" SINGLE "++occupation1++" SEARCHING FOR SOULMATE")
+	putStrLn ("\tIf you like piña coladas and getting caught in the "++pluralnoun1++", then you could be the "++noun1++" that I’m looking for.  I’m a "++noun2++"-loving "++noun3++" who likes long walks on the "++noun4++" and "++ingverb1++" up with a "++adjective2++" book.  I’m a "++adjective3++" worker and a "++adverb1++" "++adjective4++" lover.  I’m searching for a soulmate, man or woman, who doesn’t mind that I’ve been married "++number1++" times before and have "++number2++" "++adjective5++" children.  Ideally, you would be a "++adjective6++" "++noun5++" who likes to frequently "++verb1++" with my "++pluralnoun2++".  For our first date, I would like to take you to a "++noun6++" game or "++noun7++" show, your choice.  If you’re at all interested in meeting me, please "++verb2++".  I’ll be waiting.")
