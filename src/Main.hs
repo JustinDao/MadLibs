@@ -6,6 +6,7 @@ import System.Random
 main :: IO()
 main = do 
 	hSetBuffering stdout NoBuffering
+<<<<<<< HEAD
 	putStr "Enter the MadLib number you want to do (1-5): "
 	choice <- getLine
 	if (choice == "1")
@@ -95,3 +96,9 @@ madLibs5 = do
 	putStr "Occupation: "
 	occupation1 <- getLine
 	putStrLn "MadLibs5"
+=======
+	putStr "This is a new line by Alex."
+	putStr "Give me a noun: "
+	name <- getLine
+	putStrLn (name)
+>>>>>>> 5683d9b87b1742171f6affb07ba994e9d6a2ed61
